@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teknik Bilgiler - Ahşap Kiriş</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: #f8fafc; display: flex; flex-direction: column; min-height: 100vh; }
+        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 20px 8%; background-color: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .logo { font-size: 24px; font-weight: 700; }
+        .logo-red { color: #b71c1c; }
+        .logo-blue { color: #1e3a8a; }
+        .nav-links a { text-decoration: none; color: #334155; margin-left: 25px; font-weight: 500; font-size: 15px; transition: color 0.3s; }
+        .nav-links a:hover, .nav-links a.active { color: #b71c1c; }
+        .technical-container { max-width: 1000px; margin: 40px auto 60px auto; padding: 0 20px; width: 100%; }
+        .tech-table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 30px; }
+        .tech-table th { background-color: #1e3a8a; color: white; font-weight: 600; text-align: left; padding: 14px 18px; font-size: 15px; }
+        .tech-table td { padding: 12px 18px; border: 1px solid #e2e8f0; color: #334155; font-size: 14px; }
+        .tech-table tr:nth-child(even) { background-color: #f8fafc; }
+        .specs-table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .specs-table td { padding: 14px 18px; border: 1px solid #e2e8f0; font-size: 14px; color: #334155; }
+        .specs-table td:first-child { font-weight: 600; color: #0f172a; background-color: #f8fafc; width: 40%; }
+        .main-footer { background-color: #0f172a; color: #94a3b8; text-align: center; padding: 25px 20px; font-size: 14px; margin-top: auto; border-top: 1px solid #1e293b; }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+            <div class="logo"><span class="logo-red">AHŞAP</span><span class="logo-blue">KİRİŞ</span></div>
+        </a>
+        <nav class="nav-links">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="urunler.html">H20 Ahşap Kiriş</a>
+            <a href="teknik.html" class="active">Teknik Bilgiler</a>
+            <a href="galeri.html">Uygulama Alanları</a>
+            <a href="iletisim.html">İletişim</a>
+        </nav>
+    </header>
+    <div class="technical-container">
+        <div style="background-color: #d32f2f; color: white; padding: 12px 20px; font-weight: 600; font-size: 16px; border-radius: 8px; margin-bottom: 20px; text-align: center;">Teknik Bilgiler</div>
+        <table class="tech-table">
+            <thead>
+                <tr><th>Uzunluk (cm)</th><th>Yükseklik (cm)</th><th>Genişlik (cm)</th><th>Ağırlık (kg)</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>125</td><td>20</td><td>8</td><td>6,25</td></tr>
+                <tr><td>245</td><td>20</td><td>8</td><td>12,25</td></tr>
+                <tr><td>290</td><td>20</td><td>8</td><td>14,50</td></tr>
+                <tr><td>330</td><td>20</td><td>8</td><td>16,50</td></tr>
+                <tr><td>360</td><td>20</td><td>8</td><td>18,00</td></tr>
+                <tr><td>390</td><td>20</td><td>8</td><td>19,50</td></tr>
+                <tr><td>450</td><td>20</td><td>8</td><td>22,50</td></tr>
+                <tr><td>490</td><td>20</td><td>8</td><td>24,50</td></tr>
+                <tr><td>590</td><td>20</td><td>8</td><td>29,50</td></tr>
+            </tbody>
+        </table>
+        <table class="specs-table">
+            <tbody>
+                <tr><td>Ağaç Cinsi</td><td>Köknar / Ladin</td></tr>
+                <tr><td>İzin verilen modül M</td><td>5,0 kNm</td></tr>
+                <tr><td>İzin verilen makaslama direnci Q</td><td>11,0 kN</td></tr>
+                <tr><td>Geometrik atalet momenti JX</td><td>4613 cm4</td></tr>
+                <tr><td>Kiriş Ağırlığı</td><td>5 kg/mt</td></tr>
+                <tr><td>Palet</td><td>50 adet</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <footer class="main-footer"><p>&copy; 2026 Ahşap Kiriş. Tüm Hakları Saklıdır.</p></footer>
+</body>
+</html>

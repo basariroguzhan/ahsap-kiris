@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Ahşap Kiriş</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-container {
+            max-width: 1100px;
+            margin: 40px auto 60px auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .contact-info-panel {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid #1e3a8a;
+        }
+        .contact-map-panel {
+            flex: 1.2;
+            min-width: 350px;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid #b71c1c;
+            display: flex;
+            flex-direction: column;
+        }
+        .info-item {
+            margin-bottom: 25px;
+        }
+        .info-item h3 {
+            font-size: 16px;
+            color: #0f172a;
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .info-item p {
+            font-size: 14px;
+            color: #475569;
+            line-height: 1.6;
+        }
+        .map-box {
+            width: 100%;
+            height: 350px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+            margin-top: 15px;
+            flex-grow: 1;
+        }
+        .map-box iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-red">AHŞAP</span><span class="logo-blue">KİRİŞ</span>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="urunler.html">H20 Ahşap Kiriş</a>
+            <a href="teknik.html">Teknik Bilgiler</a>
+            <a href="galeri.html">Uygulama Alanları</a>
+            <a href="iletisim.html" class="active">İletişim</a>
+        </nav>
+    </header>
+
+    <section style="min-height: 85vh; padding-top: 30px; background-color: #f8fafc;">
+        <div class="section-title" style="text-align: center; margin-bottom: 20px;">
+            <h2 style="font-size: 28px; color: #0f172a; font-weight: 700;">Bizimle İletişime Geçin</h2>
+            <p style="color: #64748b; font-size: 15px;">Sorularınız, ürün talepleriniz ve fiyat teklifleri için bize ulaşabilirsiniz.</p>
+        </div>
+
+        <div class="contact-container">
+            
+            <div class="contact-info-panel">
+                <h2 style="font-size: 20px; color: #1e3a8a; margin-bottom: 25px; font-weight: 700;">İletişim Bilgileri</h2>
+                
+                <div class="info-item">
+                    <h3>Merkez Ofis & Fabrika</h3>
+                    <p>Sanayi Mahallesi, H20 Keresteciler Sitesi, 390. Sokak No: 12<br>Merkez / İstanbul</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Telefon</h3>
+                    <p>+90 (212) 670 02 54</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>E-Posta</h3>
+                    <p>satis@ahsapkirisprojesi.com</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Çalışma Saatleri</h3>
+                    <p>Pazartesi - Cumartesi: 08:30 - 18:30<br>Pazar: Kapalı</p>
+                </div>
+            </div>
+
+            <div class="contact-map-panel">
+                <h2 style="font-size: 20px; color: #b71c1c; font-weight: 700;">https://maps.app.goo.gl/GQLg4cQfbV3s3dhL7</h2>
+                
+                <div class="map-box">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192697.888504832!2d28.800107775952673!3d41.00523719177241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1cc1e016ba7a759!2zSXPPhGFuYnVs!5e0!3m2!1str!2str!4v1710000000000!5m2!1str!2str" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Ahşap Kiriş. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+</body>
+</html>

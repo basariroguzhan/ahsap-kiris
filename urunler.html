@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H20 Ahşap Kiriş Ürünleri - Ahşap Kiriş</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .product-tab {
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .product-tab:hover {
+            transform: translateX(5px);
+            background-color: #f1f5f9 !important;
+        }
+        .product-tab.active-tab {
+            background-color: #eff6ff !important;
+            border-left-color: #1e3a8a !important;
+            box-shadow: 0 4px 12px rgba(30, 58, 138, 0.08) !important;
+        }
+        .description-text p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #475569;
+            margin-bottom: 16px;
+        }
+        .description-text ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+        .description-text ul li {
+            font-size: 14px;
+            color: #334155;
+            line-height: 1.6;
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+        .description-text ul li::before {
+            content: "–";
+            position: absolute;
+            left: 0;
+            color: #1e3a8a;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-red">AHŞAP</span><span class="logo-blue">KİRİŞ</span>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="urunler.html" class="active">H20 Ahşap Kiriş</a>
+            <a href="teknik.html">Teknik Bilgiler</a>
+            <a href="galeri.html">Uygulama Alanları</a>
+            <a href="iletisim.html">İletişim</a>
+        </nav>
+    </header>
+
+    <section class="products-section" style="min-height: 85vh; padding-top: 40px; background-color: #f8fafc;">
+        <div class="section-title">
+            <h2>H20 Ahşap Kiriş Sistemleri</h2>
+            <p>Ürün Çeşitleri ve Detaylı Ürün Kataloğu</p>
+        </div>
+
+        <div style="display: flex; max-width: 1200px; margin: 0 auto; gap: 30px; align-items: flex-start; padding: 0 20px; margin-bottom: 50px;">
+            
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 15px; max-width: 320px;">
+                
+                <div style="text-align: center; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); margin-bottom: 10px;">
+                    <div style="background-color: #d32f2f; color: white; padding: 10px; font-weight: 600; font-size: 15px; border-radius: 20px; margin-bottom: 15px;">
+                        H20 Ahşap Kolon Kirişleri
+                    </div>
+                    <img src="img/H20 Ahşap Kolon Kirişleri.png" alt="H20 Ahşap Kolon Kirişleri" style="max-width: 100%; height: auto; object-fit: contain; max-height: 200px;">
+                </div>
+
+                <h3 style="font-size: 18px; color: #1e3a8a; font-weight: 600; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; margin-bottom: 5px; text-align: left;">Ürün Çeşitlerimiz</h3>
+                
+                <div class="product-tab active-tab" onclick="showProduct('H20 ~ 245 cm')" id="tab-245" style="display: flex; align-items: center; background: white; padding: 12px 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); border-left: 4px solid #b71c1c; gap: 15px;">
+                    <img src="img/kiris-245.png" alt="H20 245 cm" style="width: 50px; height: 50px; object-fit: contain;">
+                    <span style="font-weight: 600; color: #0f172a; font-size: 14px;">H20 ~ 245 cm – Ahşap Kiriş</span>
+                </div>
+
+                <div class="product-tab" onclick="showProduct('H20 ~ 290 cm')" id="tab-290" style="display: flex; align-items: center; background: white; padding: 12px 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); border-left: 4px solid #b71c1c; gap: 15px;">
+                    <img src="img/kiris-245.png" alt="H20 290 cm" style="width: 50px; height: 50px; object-fit: contain;">
+                    <span style="font-weight: 600; color: #0f172a; font-size: 14px;">H20 ~ 290 cm – Ahşap Kiriş</span>
+                </div>
+
+                <div class="product-tab" onclick="showProduct('H20 ~ 330 cm')" id="tab-330" style="display: flex; align-items: center; background: white; padding: 12px 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); border-left: 4px solid #b71c1c; gap: 15px;">
+                    <img src="img/kiris-390.png" alt="H20 330 cm" style="width: 50px; height: 50px; object-fit: contain;">
+                    <span style="font-weight: 600; color: #0f172a; font-size: 14px;">H20 ~ 330 cm – Ahşap Kiriş</span>
+                </div>
+
+                <div class="product-tab" onclick="showProduct('H20 ~ 360 cm')" id="tab-360" style="display: flex; align-items: center; background: white; padding: 12px 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); border-left: 4px solid #b71c1c; gap: 15px;">
+                    <img src="img/kiris-390.png" alt="H20 360 cm" style="width: 50px; height: 50px; object-fit: contain;">
+                    <span style="font-weight: 600; color: #0f172a; font-size: 14px;">H20 ~ 360 cm – Ahşap Kiriş</span>
+                </div>
+
+                <div class="product-tab" onclick="showProduct('H20 ~ 390 cm')" id="tab-390" style="display: flex; align-items: center; background: white; padding: 12px 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); border-left: 4px solid #b71c1c; gap: 15px;">
+                    <img src="img/kiris-390.png" alt="H20 390 cm" style="width: 50px; height: 50px; object-fit: contain;">
+                    <span style="font-weight: 600; color: #0f172a; font-size: 14px;">H20 ~ 390 cm – Ahşap Kiriş</span>
+                </div>
+
+                <div class="product-tab" onclick="showProduct('H20 ~ 490 cm')" id="tab-490" style="display: flex; align-items: center; background: white; padding: 12px 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); border-left: 4px solid #b71c1c; gap: 15px;">
+                    <img src="img/kiris-490.png" alt="H20 490 cm" style="width: 50px; height: 50px; object-fit: contain;">
+                    <span style="font-weight: 600; color: #0f172a; font-size: 14px;">H20 ~ 490 cm – Ahşap Kiriş</span>
+                </div>
+            </div>
+
+            <div style="flex: 1.8; background: white; padding: 35px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: left;" class="description-text">
+                
+                <h3 id="product-title" style="font-size: 22px; color: #b71c1c; margin-bottom: 20px; font-weight: 700; border-bottom: 2px solid #f1f5f9; padding-bottom: 10px;">H20 ~ 245 cm – Ahşap Kiriş</h3>
+                
+                <h4 style="color: #0f172a; font-size: 16px; margin-bottom: 10px; font-weight: 600;">Ahşap Kiriş Ürünleri – Ebatlar – Ahşap Kiriş Fiyatları</h4>
+                <p>
+                    Ahşap Kalıp Kirişi, geleneksel ahşap kalıba göre çok daha dayanıklı ve uzun ömürlüdür. Kullanımı kalıp maliyetlerinde yüksek derecede tasarruf sağlar. Kontraplaktan üretilen H20 kirişler hem taşıma kapasitesi hem de uzun ömrü ile cebinizin ve çevrenizin dostudur. Dikey ve yatay olmak üzere 3 kat laminasyon yapılarak hem mukavemeti artırılmış hem de burulma ve dönmesi önlenmiştir. Standart boyların yanı sıra özel ekleme elemanı ile daha uzun boyda kirişler elde edilebilir. Ahşap Kirişler; Perde, kolon ve döşeme kalıpları için ideal bir taşıyıcı olduğu kadar ahşap kerestenin taşıyıcı olarak kullanıldığı her yerde hafif, dayanıklı, ekonomik ve taşıma kapasitesi yüksek bir yapı elemanıdır.
+                </p>
+                
+                <ul>
+                    <li>Betonarme döşeme, betonarme perde, betonarme kolonların kalıplarında</li>
+                    <li>Kullanım ömrü uzundur ve dayanıklıdır.</li>
+                    <li>Üretim boyutları standarttır.</li>
+                    <li>Kullanım süresi ve kullanım alanları düşünüldüğünde ekonomiktir.</li>
+                    <li>Çevre ve orman dostudur.</li>
+                </ul>
+
+                <h4 style="color: #0f172a; font-size: 16px; margin-top: 25px; margin-bottom: 10px; font-weight: 600;">H20 Ahşap Kiriş Kullanım Alanları</h4>
+                <ul>
+                    <li>H20 Ahşap kalıp kirişleri betonarme kalıp sistemlerinde (betonarme döşeme, betonarme perde, betonarme kolon vb) çok amaçlı kullanılan bir elemandır.</li>
+                    <li>Değişik betonarme kalıp uygulamalarında uyum kolaylığı sağlayarak avantajlar sağlar.</li>
+                    <li>Kullanım ömrü geleneksel ahşap elemanlara göre uzundur ve dayanıklıdır.</li>
+                    <li>Üretim kesiti standarttır, boyu projeye özel üretilebilmektedir.</li>
+                    <li>Kullanım süresi ve kullanım alanları düşünüldüğünde ekonomiktir.</li>
+                    <li>H20 Ahşap kalıp kirişleri çevre ve orman dostudur.</li>
+                </ul>
+
+                <h4 style="color: #0f172a; font-size: 16px; margin-top: 25px; margin-bottom: 10px; font-weight: 600;">Teknik Özellikler:</h4>
+                <ul>
+                    <li>Ölçüleri : 80 / 40 / 24 mm</li>
+                    <li>Malzeme : Uçları, kirişin zarar görmemesi için özel olarak yuvarlatılmıştır.</li>
+                    <li>Teknik Değerler :</li>
+                    <li>i- Kesme Kuvveti Güvenlik Sınırı: 11 kN.</li>
+                    <li>ii- Moment Güvenlik Sınırı: 5 kNm.</li>
+                    <li>iii- Sehim Sınırı: L/400 veya 3,0 mm</li>
+                    <li>iv- Elastisite Modülü: 10 GPa</li>
+                    <li>v- Kayma Modülü: 0,25 GPa</li>
+                    <li>Güvenlik Kat Sayısı : 2</li>
+                    <li>Güvenilir, milimetrik ölçüler</li>
+                    <li>Yüksek kaliteli özel tutkalı ile uzun kullanım ömrü</li>
+                    <li>Özel yuvarlatılmış kafası ile daha iyi korunma</li>
+                    <li>Şantiyelerde zaman ve para tasarrufu</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Ahşap Kiriş & H20 Kalıp Sistemleri. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <script>
+        function showProduct(productName) {
+            document.getElementById("product-title").innerText = productName;
+            document.querySelectorAll(".product-tab").forEach(tab => {
+                tab.classList.remove("active-tab");
+            });
+            event.currentTarget.classList.add("active-tab");
+        }
+    </script>
+
+</body>
+</html>
