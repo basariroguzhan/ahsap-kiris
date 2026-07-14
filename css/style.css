@@ -372,3 +372,45 @@ html, body {
         flex: 1 1 100% !important;
     }
 }
+
+/* ==========================================
+   TÜM SAYFALAR İÇİN ORTAK MOBİL VE TABLET UYUMLULUĞU
+   ========================================== */
+@media (max-width: 768px) {
+    /* Üst Menü (Navbar) Mobil Düzeltmeleri */
+    .navbar {
+        flex-direction: column !important;
+        gap: 15px !important;
+        padding: 15px 10px !important;
+        text-align: center !important;
+    }
+
+    .nav-links {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 10px 15px !important;
+        width: 100% !important;
+    }
+
+    .nav-links a {
+        font-size: 13px !important;
+        padding: 5px 8px !important;
+    }
+
+    /* Ürünler Bölümü Genel Mobil Düzeltmeleri */
+    .products-container {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+    
+    .sidebar-menu {
+        max-width: 100% !important;
+        flex: 1 1 100% !important;
+    }
+
+    .description-text {
+        padding: 20px !important;
+        flex: 1 1 100% !important;
+    }
+}
