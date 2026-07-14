@@ -6,100 +6,6 @@
     <title>Ana Sayfa - Ahşap Kiriş</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        /* ALTTAKİ BEYAZ BOŞLUĞU ÇÖZEN ESNEK SAYFA YAPISI */
-        html, body {
-            margin: 0;
-            padding: 0;
-            height: 100%; /* Sayfanın tam ekran yüksekliğini almasını sağlar */
-            display: flex;
-            flex-direction: column;
-            background-color: #fff;
-        }
-        
-        .navbar {
-            /* Eğer style.css içinde yoksa burası üst menüyü tutar */
-        }
-
-        .hero-section {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 60px 8%;
-            background-color: #fff;
-            flex: 1; /* Sayfa kısa bile olsa bu alan dikeyde esneyerek footer'ı en alta iter */
-        }
-        .hero-text {
-            max-width: 550px;
-        }
-        .hero-text h1 {
-            font-size: 32px;
-            color: #0f172a;
-            font-weight: 700;
-            line-height: 1.3;
-            margin-bottom: 15px;
-        }
-        .hero-text h1 span {
-            color: #b71c1c;
-        }
-        .hero-text p {
-            font-size: 15px;
-            color: #64748b;
-            line-height: 1.6;
-            margin-bottom: 30px;
-        }
-        .hero-buttons {
-            display: flex;
-            gap: 15px;
-        }
-        .btn-red {
-            background-color: #b71c1c;
-            color: #fff;
-            padding: 12px 24px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 14px;
-        }
-        .btn-outline {
-            border: 2px solid #1e3a8a;
-            color: #1e3a8a;
-            padding: 10px 22px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 14px;
-        }
-        .hero-image-box {
-            display: flex;
-            justify-content: flex-end;
-        }
-        .blue-box {
-            width: 440px;
-            height: 340px;
-            background: linear-gradient(135deg, #1e3a8a 0%, #11224d 100%);
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            font-size: 26px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            box-shadow: 0 15px 30px rgba(22, 46, 101, 0.15);
-        }
-
-        /* GÖRSELDEKİ KOYU RENKLİ FOOTER SINIFI */
-        .main-footer {
-            background-color: #0f172a; /* Görseldeki koyu lacivert/siyah tonu */
-            color: #94a3b8;
-            text-align: center;
-            padding: 25px 20px;
-            font-size: 14px;
-            width: 100%;
-            border-top: 1px solid #1e293b;
-        }
-    </style>
 </head>
 <body>
 
@@ -118,6 +24,7 @@
         </nav>
     </header>
 
+    <!-- KAHRAMAN ALANI -->
     <section class="hero-section">
         <div class="hero-text">
             <h1>Dayanıklı Yapıların Güçlü Temeli: <br><span>H20 Ahşap Kirişler</span></h1>
@@ -127,14 +34,73 @@
                 <a href="teknik.html" class="btn-outline">Teknik Katalog</a>
             </div>
         </div>
-        <div class="hero-image-box">
-            <div class="blue-box">
-                H20 KİRİŞ
+    </section>
+
+    <!-- ALT GÖRSEL BANDI (ÇOKLU KAYAN SLIDER - 3 GRUPLU VE BOŞLUKSUZ) -->
+    <section class="carousel-section">
+        <h2 class="carousel-title">Uygulama Alanları & Ürünlerimiz</h2>
+        <div class="carousel-container">
+            <div class="carousel-track">
+                
+                <!-- ====== 1. GRUP: ASIL GÖRSELLER ====== -->
+                <div class="carousel-item">
+                    <img src="img/ahsap-kiris-kullanım.jpg" alt="Şantiye Uygulama Alanı">
+                   
+                </div>
+                <div class="carousel-item">
+                    <img src="img/H20 Ahşap Kolon Kirişleri.png" alt="Kolon Kirişleri">
+                   
+                </div>
+                <div class="carousel-item">
+                    <img src="img/uygluma1.jpg" alt="H20 245 cm">
+                   
+                </div>
+                <div class="carousel-item">
+                    <img src="img/uyugluma2.jpg" alt="H20 490 cm">
+                   
+                </div>
+
+                <!-- ====== 2. GRUP: KOPYA 1 ====== -->
+                <div class="carousel-item">
+                    <img src="img/ahsap-kiris-kullanım.jpg" alt="Şantiye Uygulama Alanı">
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="img/H20 Ahşap Kolon Kirişleri.png" alt="Kolon Kirişleri">
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="img/uygluma1.jpg" alt="H20 245 cm">
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="img/uyugluma2.jpg" alt="H20 490 cm">
+                    
+                </div>
+
+                <!-- ====== 3. GRUP: KOPYA 2 ====== -->
+                <div class="carousel-item">
+                    <img src="img/ahsap-kiris-kullanım.jpg" alt="Şantiye Uygulama Alanı">
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="img/H20 Ahşap Kolon Kirişleri.png" alt="Kolon Kirişleri">
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="img/uygluma1.jpg" alt="H20 245 cm">
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="img/uyugluma2.jpg" alt="H20 490 cm">
+                    
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- GÖRSELDEKİ METİNLE BİREBİR EŞİTLENMİŞ FOOTER -->
+    <!-- FOOTER -->
     <footer class="main-footer">
         <p>&copy; 2026 Ahşap Kiriş & Ahsapkiris.com Tüm Hakları Saklıdır.</p>
     </footer>
