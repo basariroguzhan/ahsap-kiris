@@ -46,6 +46,48 @@
             color: #1e3a8a;
             font-weight: bold;
         }
+
+        /* ==========================================
+           MOBİL VE TABLET UYUMLULUK (RESPONSIVE)
+           ========================================== */
+        @media (max-width: 768px) {
+            /* Üst Menü (Navbar) Mobil Düzeltmeleri */
+            .navbar {
+                flex-direction: column !important;
+                gap: 15px !important;
+                padding: 15px 10px !important;
+                text-align: center !important;
+            }
+
+            .nav-links {
+                display: flex !important;
+                flex-wrap: wrap !important;
+                justify-content: center !important;
+                gap: 10px 15px !important;
+                width: 100% !important;
+            }
+
+            .nav-links a {
+                font-size: 13px !important;
+                padding: 5px 8px !important;
+            }
+
+            /* Alt Gövde İçerik Mobil Düzeltmeleri */
+            .products-container {
+                flex-direction: column !important;
+                gap: 20px !important;
+            }
+            
+            .sidebar-menu {
+                max-width: 100% !important;
+                flex: 1 1 100% !important;
+            }
+
+            .description-text {
+                padding: 20px !important;
+                flex: 1 1 100% !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -67,9 +109,10 @@
 
     <section class="products-section" style="min-height: 85vh; padding-top: 40px; background-color: #f8fafc;">
 
-        <div style="display: flex; max-width: 1200px; margin: 0 auto; gap: 30px; align-items: flex-start; padding: 0 20px; margin-bottom: 50px;">
+
+        <div class="products-container" style="display: flex; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; gap: 30px; align-items: flex-start; padding: 0 20px; margin-bottom: 50px;">
             
-            <div style="flex: 1; display: flex; flex-direction: column; gap: 15px; max-width: 320px;">
+            <div class="sidebar-menu" style="flex: 1; display: flex; flex-direction: column; gap: 15px; min-width: 280px; max-width: 320px; width: 100%;">
                 
                 <div style="text-align: center; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); margin-bottom: 10px;">
                     <div style="background-color: #d32f2f; color: white; padding: 10px; font-weight: 600; font-size: 15px; border-radius: 20px; margin-bottom: 15px;">
@@ -77,41 +120,39 @@
                     </div>
                     <img src="img/H20 Ahşap Kolon Kirişleri.png" alt="H20 Ahşap Kolon Kirişleri" style="max-width: 100%; height: auto; object-fit: contain; max-height: 200px;">
                 </div>
-
-                <!-- Ürün Çeşitlerimiz başlığı buradan tamamen kaldırıldı -->
                 
-                <div class="product-tab active-tab" onclick="showProduct('H20 ~ 245 cm')" id="tab-245" style="display: flex; align-items: center; background: white; padding: 12px 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); border-left: 4px solid #b71c1c; gap: 15px;">
+                <div class="product-tab active-tab" onclick="showProduct('H20 ~ 245 cm')" id="tab-245" style="display: flex; align-items: center; background: white; padding: 12px 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02) !important; border-left: 4px solid #b71c1c; gap: 15px;">
                     <img src="img/kiris-245.png" alt="H20 245 cm" style="width: 50px; height: 50px; object-fit: contain;">
                     <span style="font-weight: 600; color: #0f172a; font-size: 14px;">H20 ~ 245 cm – Ahşap Kiriş</span>
                 </div>
 
-                <div class="product-tab" onclick="showProduct('H20 ~ 290 cm')" id="tab-290" style="display: flex; align-items: center; background: white; padding: 12px 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); border-left: 4px solid #b71c1c; gap: 15px;">
+                <div class="product-tab" onclick="showProduct('H20 ~ 290 cm')" id="tab-290" style="display: flex; align-items: center; background: white; padding: 12px 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02) !important; border-left: 4px solid #b71c1c; gap: 15px;">
                     <img src="img/kiris-245.png" alt="H20 290 cm" style="width: 50px; height: 50px; object-fit: contain;">
                     <span style="font-weight: 600; color: #0f172a; font-size: 14px;">H20 ~ 290 cm – Ahşap Kiriş</span>
                 </div>
 
-                <div class="product-tab" onclick="showProduct('H20 ~ 330 cm')" id="tab-330" style="display: flex; align-items: center; background: white; padding: 12px 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); border-left: 4px solid #b71c1c; gap: 15px;">
+                <div class="product-tab" onclick="showProduct('H20 ~ 330 cm')" id="tab-330" style="display: flex; align-items: center; background: white; padding: 12px 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02) !important; border-left: 4px solid #b71c1c; gap: 15px;">
                     <img src="img/kiris-390.png" alt="H20 330 cm" style="width: 50px; height: 50px; object-fit: contain;">
                     <span style="font-weight: 600; color: #0f172a; font-size: 14px;">H20 ~ 330 cm – Ahşap Kiriş</span>
                 </div>
 
-                <div class="product-tab" onclick="showProduct('H20 ~ 360 cm')" id="tab-360" style="display: flex; align-items: center; background: white; padding: 12px 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); border-left: 4px solid #b71c1c; gap: 15px;">
+                <div class="product-tab" onclick="showProduct('H20 ~ 360 cm')" id="tab-360" style="display: flex; align-items: center; background: white; padding: 12px 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02) !important; border-left: 4px solid #b71c1c; gap: 15px;">
                     <img src="img/kiris-390.png" alt="H20 360 cm" style="width: 50px; height: 50px; object-fit: contain;">
                     <span style="font-weight: 600; color: #0f172a; font-size: 14px;">H20 ~ 360 cm – Ahşap Kiriş</span>
                 </div>
 
-                <div class="product-tab" onclick="showProduct('H20 ~ 390 cm')" id="tab-390" style="display: flex; align-items: center; background: white; padding: 12px 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); border-left: 4px solid #b71c1c; gap: 15px;">
+                <div class="product-tab" onclick="showProduct('H20 ~ 390 cm')" id="tab-390" style="display: flex; align-items: center; background: white; padding: 12px 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02) !important; border-left: 4px solid #b71c1c; gap: 15px;">
                     <img src="img/kiris-390.png" alt="H20 390 cm" style="width: 50px; height: 50px; object-fit: contain;">
                     <span style="font-weight: 600; color: #0f172a; font-size: 14px;">H20 ~ 390 cm – Ahşap Kiriş</span>
                 </div>
 
-                <div class="product-tab" onclick="showProduct('H20 ~ 490 cm')" id="tab-490" style="display: flex; align-items: center; background: white; padding: 12px 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); border-left: 4px solid #b71c1c; gap: 15px;">
+                <div class="product-tab" onclick="showProduct('H20 ~ 490 cm')" id="tab-490" style="display: flex; align-items: center; background: white; padding: 12px 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02) !important; border-left: 4px solid #b71c1c; gap: 15px;">
                     <img src="img/kiris-490.png" alt="H20 490 cm" style="width: 50px; height: 50px; object-fit: contain;">
                     <span style="font-weight: 600; color: #0f172a; font-size: 14px;">H20 ~ 490 cm – Ahşap Kiriş</span>
                 </div>
             </div>
 
-            <div style="flex: 1.8; background: white; padding: 35px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: left;" class="description-text">
+            <div style="flex: 1.8; min-width: 280px; background: white; padding: 35px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: left;" class="description-text">
                 
                 <h3 id="product-title" style="font-size: 22px; color: #b71c1c; margin-bottom: 20px; font-weight: 700; border-bottom: 2px solid #f1f5f9; padding-bottom: 10px;">H20 ~ 245 cm – Ahşap Kiriş</h3>
                 
