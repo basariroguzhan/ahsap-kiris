@@ -15,6 +15,14 @@
                 <span class="logo-red">AHŞAP</span><span class="logo-blue">KİRİŞ</span>
             </div>
         </a>
+        
+        <!-- Hamburger Menü Butonu -->
+        <button class="menu-toggle" aria-label="Menüyü Aç">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
         <nav class="nav-links">
             <a href="index.html" class="active">Ana Sayfa</a>
             <a href="urunler.html">H20 Ahşap Kiriş</a>
@@ -45,55 +53,43 @@
                 <!-- ====== 1. GRUP: ASIL GÖRSELLER ====== -->
                 <div class="carousel-item">
                     <img src="img/ahsap-kiris-kullanım.jpg" alt="Şantiye Uygulama Alanı">
-                   
                 </div>
                 <div class="carousel-item">
                     <img src="img/H20 Ahşap Kolon Kirişleri.png" alt="Kolon Kirişleri">
-                   
                 </div>
                 <div class="carousel-item">
                     <img src="img/uygluma1.jpg" alt="H20 245 cm">
-                   
                 </div>
                 <div class="carousel-item">
                     <img src="img/uyugluma2.jpg" alt="H20 490 cm">
-                   
                 </div>
 
                 <!-- ====== 2. GRUP: KOPYA 1 ====== -->
                 <div class="carousel-item">
                     <img src="img/ahsap-kiris-kullanım.jpg" alt="Şantiye Uygulama Alanı">
-                    
                 </div>
                 <div class="carousel-item">
                     <img src="img/H20 Ahşap Kolon Kirişleri.png" alt="Kolon Kirişleri">
-                    
                 </div>
                 <div class="carousel-item">
                     <img src="img/uygluma1.jpg" alt="H20 245 cm">
-                    
                 </div>
                 <div class="carousel-item">
                     <img src="img/uyugluma2.jpg" alt="H20 490 cm">
-                    
                 </div>
 
                 <!-- ====== 3. GRUP: KOPYA 2 ====== -->
                 <div class="carousel-item">
                     <img src="img/ahsap-kiris-kullanım.jpg" alt="Şantiye Uygulama Alanı">
-                    
                 </div>
                 <div class="carousel-item">
                     <img src="img/H20 Ahşap Kolon Kirişleri.png" alt="Kolon Kirişleri">
-                    
                 </div>
                 <div class="carousel-item">
                     <img src="img/uygluma1.jpg" alt="H20 245 cm">
-                    
                 </div>
                 <div class="carousel-item">
                     <img src="img/uyugluma2.jpg" alt="H20 490 cm">
-                    
                 </div>
 
             </div>
@@ -105,5 +101,14 @@
         <p>&copy; 2026 Ahşap Kiriş & Ahsapkiris.com Tüm Hakları Saklıdır.</p>
     </footer>
 
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>

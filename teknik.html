@@ -7,7 +7,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        /* Tablo Konteyneri için özel stiller */
         .table-responsive-container {
             width: 100%;
             overflow-x: auto;
@@ -21,28 +20,6 @@
            MOBİL VE TABLET UYUMLULUK (RESPONSIVE)
            ========================================== */
         @media (max-width: 768px) {
-            /* Üst Menü (Navbar) Mobil Düzeltmeleri */
-            .navbar {
-                flex-direction: column !important;
-                gap: 15px !important;
-                padding: 15px 10px !important;
-                text-align: center !important;
-            }
-
-            .nav-links {
-                display: flex !important;
-                flex-wrap: wrap !important;
-                justify-content: center !important;
-                gap: 10px 15px !important;
-                width: 100% !important;
-            }
-
-            .nav-links a {
-                font-size: 13px !important;
-                padding: 5px 8px !important;
-            }
-
-            /* Teknik İçerik Alanı Düzeltmeleri */
             .teknik-container {
                 padding: 15px !important;
             }
@@ -62,6 +39,13 @@
                 <span class="logo-red">AHŞAP</span><span class="logo-blue">KİRİŞ</span>
             </div>
         </a>
+        
+        <button class="menu-toggle" aria-label="Menüyü Aç">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
         <nav class="nav-links">
             <a href="index.html">Ana Sayfa</a>
             <a href="urunler.html">H20 Ahşap Kiriş</a>
@@ -71,15 +55,13 @@
         </nav>
     </header>
 
-    <!-- İçerik Alanı -->
     <section class="teknik-section" style="min-height: 85vh; padding: 40px 10px; background-color: #f8fafc;">
         <div class="teknik-container" style="max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
             
-            <div class="teknik-title" style="background-color: #111827; color: white; text-align: center; padding: 15px; font-weight: 700; font-size: 20px; border-radius: 8px; margin-bottom: 25px;">
+            <div class="teknik-title" style="background-color: #b71c1c; color: white; text-align: center; padding: 15px; font-weight: 700; font-size: 20px; border-radius: 8px; margin-bottom: 25px;">
                 Teknik Bilgiler
             </div>
 
-            <!-- Tablo Taşmasın diye bu divin içine aldık -->
             <div class="table-responsive-container">
                 <table style="width: 100%; border-collapse: collapse; min-width: 500px; text-align: center;">
                     <thead>
@@ -104,7 +86,6 @@
                 </table>
             </div>
 
-            <!-- Alt Özellikler Tablosu Taşmasın diye bu divin içine aldık -->
             <div class="table-responsive-container">
                 <table style="width: 100%; border-collapse: collapse; min-width: 500px; text-align: left;">
                     <tbody style="color: #334155; font-size: 14px;">
@@ -131,5 +112,14 @@
         <p>&copy; 2026 Ahşap Kiriş & Ahsapkiris.com Tüm Hakları Saklıdır.</p>
     </footer>
 
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>

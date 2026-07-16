@@ -73,6 +73,25 @@
             border-left: 4px solid #e51c23;
             padding-left: 10px;
         }
+
+        /* ==========================================
+           MOBİL VE TABLET UYUMLULUK (RESPONSIVE)
+           ========================================== */
+        @media (max-width: 768px) {
+            .app-container {
+                margin: 20px auto 40px auto !important;
+            }
+            .main-card {
+                padding: 20px !important;
+            }
+            .main-title {
+                font-size: 20px !important;
+                margin-bottom: 15px !important;
+            }
+            .content-list li {
+                font-size: 14px !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -83,6 +102,13 @@
                 <span class="logo-red">AHŞAP</span><span class="logo-blue">KİRİŞ</span>
             </div>
         </a>
+        
+        <button class="menu-toggle" aria-label="Menüyü Aç">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
         <nav class="nav-links">
             <a href="index.html">Ana Sayfa</a>
             <a href="urunler.html">H20 Ahşap Kiriş</a>
@@ -133,5 +159,14 @@
         <p>&copy; 2026 Ahşap Kiriş & Ahsapkiris.com Tüm Hakları Saklıdır.</p>
     </footer>
 
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>

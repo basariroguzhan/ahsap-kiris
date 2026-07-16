@@ -413,4 +413,107 @@ html, body {
         padding: 20px !important;
         flex: 1 1 100% !important;
     }
+
+    
+}
+
+/* ==================================================
+   TAMAMEN SABİTLENMİŞ MOBİL HAMBURGER MENU CSS
+   ================================================== */
+
+/* Masaüstü standartlarında buton görünmez kalsın */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+}
+
+.menu-toggle span {
+    width: 100%;
+    height: 3px;
+    background-color: #0f172a;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Telefon ve Tablet Ekran Modu (Masaüstü yapını ezmez) */
+@media (max-width:1024px) {
+    
+    /* Diğer sayfalardaki (urunler/teknik) dikey kolon zorlamasını ezmek için !important kullandık */
+    .navbar {
+        display: flex !important;
+        flex-direction: row !important;      /* Logo solda, buton sağda yan yana kalacak */
+        justify-content: space-between !important; /* Birini sola, diğerini en sağa yaslar */
+        align-items: center !important;        /* Dikeyde ortalar */
+        padding: 15px 20px !important;
+        position: relative !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Logoyu sola yasla */
+    .navbar .logo {
+        margin: 0 !important;
+        text-align: left !important;
+    }
+
+    /* Mobilde Butonu Aktif Et ve sağa yaslı tut */
+    .menu-toggle {
+        display: flex !important;
+        margin-left: auto !important; /* Garanti olsun diye sağa iter */
+    }
+
+    /* Açılır menü listesi - Logoyu ve butonu kapatmasın diye 'absolute' ile alta açılır */
+    .nav-links {
+        display: none !important;
+        flex-direction: column !important;
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        width: 100% !important;
+        background-color: #ffffff !important;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1) !important;
+        padding: 15px 0 !important;
+        gap: 0 !important;
+        z-index: 1000 !important;
+    }
+
+    /* Menü aktifken göster */
+    .nav-links.active {
+        display: flex !important;
+    }
+
+    /* Mobil link satırları */
+    .nav-links a {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        padding: 14px 0 !important;
+        margin: 0 !important;
+        border-bottom: 1px solid #f1f5f9 !important;
+        box-sizing: border-box !important;
+        font-size: 14px !important;
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none !important;
+    }
+
+    /* Üç çizginin 'X' işaretine dönüşme animasyonu */
+    .menu-toggle.open span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }   
+    .menu-toggle.open span:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle.open span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
 }

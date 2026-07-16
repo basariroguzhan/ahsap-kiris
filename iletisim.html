@@ -66,17 +66,41 @@
             height: 100%;
             border: 0;
         }
+
+        /* ==========================================
+           MOBİL VE TABLET UYUMLULUK (RESPONSIVE)
+           ========================================== */
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column !important;
+                gap: 20px !important;
+                margin: 20px auto 40px auto !important;
+            }
+            .contact-info-panel, .contact-map-panel {
+                min-width: 100% !important;
+                flex: 1 1 100% !important;
+            }
+            .map-box {
+                height: 250px !important;
+            }
+        }
     </style>
 </head>
 <body>
 
-   
     <header class="navbar">
         <a href="index.html" style="text-decoration: none; color: inherit;">
             <div class="logo">
                 <span class="logo-red">AHŞAP</span><span class="logo-blue">KİRİŞ</span>
             </div>
         </a>
+        
+        <button class="menu-toggle" aria-label="Menüyü Aç">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
         <nav class="nav-links">
             <a href="index.html">Ana Sayfa</a>
             <a href="urunler.html">H20 Ahşap Kiriş</a>
@@ -87,7 +111,7 @@
     </header>  
 
     <section style="min-height: 85vh; padding-top: 30px; background-color: #f8fafc;">
-        <div class="section-title" style="text-align: center; margin-bottom: 20px;">
+        <div class="section-title" style="text-align: center; margin-bottom: 20px; padding: 0 20px;">
             <h2 style="font-size: 28px; color: #0f172a; font-weight: 700;">Bizimle İletişime Geçin</h2>
             <p style="color: #64748b; font-size: 15px;">Sorularınız, ürün talepleriniz ve fiyat teklifleri için bize ulaşabilirsiniz.</p>
         </div>
@@ -119,17 +143,27 @@
             </div>
 
             <div class="contact-map-panel">
-    <h2 style="font-size: 20px; color: #b71c1c; font-weight: 700; word-break: break-all;">Adresimiz</h2>
-    
-    <div class="map-box">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12029.372664247807!2d28.80636727246288!3d41.08334816532441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caaf831a7d47e7%3A0x9f78a73f71681f78!2zQmHFn2FrxZ9laGlyLCBCYcWfYWssIDM0NDgwIEJhxZ9ha8WfZWhpci_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1730471087022!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-</div>
+                <h2 style="font-size: 20px; color: #b71c1c; font-weight: 700; word-break: break-all;">Adresimiz</h2>
+                
+                <div class="map-box">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12029.372664247807!2d28.80636727246288!3d41.08334816532441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caaf831a7d47e7%3A0x9f78a73f71681f78!2zQmHFn2FrxZ9laGlyLCBCYcWfYWssIDM0NDgwIEJhxZ9ha8WfZWhpci_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1730471087022!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer class="main-footer">
         <p>&copy; 2026 Ahşap Kiriş & Ahsapkiris.com Tüm Hakları Saklıdır.</p>
     </footer>
 
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('open');
+        });
+    </script>
 </body>
-</html>
+</html> 
